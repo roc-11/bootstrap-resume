@@ -22,6 +22,14 @@
     background-color: #525252;
 }
 
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
 .bg-color-three-reasons {
     background-color: #fff;
 }
@@ -36,6 +44,25 @@
 
 .bg-color-contact {
     background-color: #fff;
+}
+
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
 }
 
 /* ------------------ Special paddings/margins/text */
@@ -134,7 +161,7 @@ header {
 }
 
 #nav li {
-    font-size: 14px;
+    /* font-size: 14px; */
     padding: 0;
 }
 
@@ -165,7 +192,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 300px;
+    font-weight: 300;
     letter-spacing: 2px;
 }
 
@@ -182,13 +209,14 @@ footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
+    margin: 0;
 }
 
 #footer-details {
     padding: 20px;
 }
 
-.cv-pdf i {
+footer .cv-pdf i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -199,7 +227,7 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.cv-pdf i:hover {
+footer .cv-pdf i:hover {
     color: #e84610;
 }
 
@@ -365,9 +393,21 @@ button[type="submit"] {
     background-color: #e48610;
 }
 
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
 /* ------------------ Media Queries */
 
 @media(min-width: 992px) {
+
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
