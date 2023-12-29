@@ -1,6 +1,9 @@
 console.log("Github Info");
 
 function fetchGitHubInformation(event) {
+
+    console.log("event");
+
     var username = $("gh-username").val;
 
     if (!username) {
