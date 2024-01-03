@@ -35,12 +35,16 @@ function repoInformationHTML(repos) {
                     <strong>Repo List:</strong>
                 </p>
                 <ul>
-                    ${listItemsHTML.join("\n")};
+                    ${listItemsHTML.join("\n")}
                 </ul>
             </div>`;
 }
 
 function fetchGitHubInformation(event) {
+
+    // empty the divs when event is triggered
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
 
     var username = $("#gh-username").val();
 
@@ -76,3 +80,5 @@ function fetchGitHubInformation(event) {
             }
         });
 }
+
+$(document).ready(fetchGitHubInformation);
